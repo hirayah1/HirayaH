@@ -445,6 +445,24 @@
     align-items: center;
     gap: 8px;
     box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+    max-width: 220px;
+    overflow-x: auto;
+    white-space: nowrap;
+    scrollbar-width: thin;
+    scrollbar-color: #c9a0dc transparent;
+  }
+
+  .translate-bar::-webkit-scrollbar {
+    height: 3px;
+  }
+
+  .translate-bar::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  .translate-bar::-webkit-scrollbar-thumb {
+    background: #c9a0dc;
+    border-radius: 2px;
   }
 
   .translate-icon { font-size: 0.85rem; }
@@ -466,6 +484,8 @@
     padding: 4px 6px !important;
     width: 130px !important;
     max-height: 30px !important;
+    appearance: auto !important;
+    -webkit-appearance: auto !important;
   }
 
   .goog-te-gadget > span,
